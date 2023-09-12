@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JavaScript D-1.js"></script>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <input id="AngkaPertama" name="AngkaPertama" placeholder="Angka Pertama" type="number">
+    <br />
+    <input id="AngkaKedua" name="AngkaKedua" placeholder="Angka Kedua" type="number">
+    <br />
+    <button onclick="peringatan()">Tombol</button>
+</body>
+<script>
+    function peringatan(){
+        let pertama = document.getElementById("AngkaPertama").value;
+        let kedua = document.getElementById("AngkaKedua").value;
+        let hasil = parseInt(pertama) + parseInt(kedua);
+        document.write("Hasilnya adalah" + hasil)
+    }
+</script>
+</html>
